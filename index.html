@@ -1,92 +1,76 @@
-
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <title>Form page</title>
-        <style>
-            table{
-                text-align: center;
-                margin: auto;
-                border-collapse: collapse;
-            }
-            body{
-                background-image: linear-gradient(to bottom left, rgb(4, 28, 247) , rgb(255, 255, 255));
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-attachment: fixed;
-            }
-            td {
-              border: 4px solid rgb(138, 138, 138);
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: medium;
-              margin: auto;
-              padding: 10px;
-              border-spacing: 5px, 5 px;
-              text-align: center;
-              font-size: auto;
-              background-color: white;
-            }
-            th {
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: large;
-              padding: 10px;
-              border-spacing: 5px, 5px;
-              border: 4px solid rgb(138, 138, 138);
-              background-color: white;
-            }
-</style>
-    </head>
-    <body>
-    <table>
-        <tr>
-            <th>NAME</th>
-            <th>SURNAME</th>
-            <th>BIRTHDAY</th>
-            <th>SEC POINTS</th>
-            <th>GAI</th>
-            <th>NOTES</th>
-        </tr>
-        <tr>
-            <td>Sarah</td>
-            <td>Wilde</td>
-            <td>12/04/2000</td>
-            <td>567</td>
-            <td>98</td>
-            <td>Studies in CS, third year, student</td>
-        </tr>
-        <tr>
-            <td>Mark</td>
-            <td>Herald</td>
-            <td>23/11/1997</td>
-            <td>443</td>
-            <td>76</td>
-            <td>Studies in DA, second year, master</td>
-        </tr>
-        <tr>
-            <td>Josh</td>
-            <td>Gill</td>
-            <td>03/01/2003</td>
-            <td>660</td>
-            <td>91</td>
-            <td>First year, bachelor</td>
-        </tr>
-        <tr>
-            <td>Samantha</td>
-            <td>Telpberg</td>
-            <td>09/21/1996</td>
-            <td>450</td>
-            <td>78</td>
-            <td>Transferred from KU, 4th year, bachelor</td>
-        </tr>
-        <tr>
-            <td>Peter</td>
-            <td>Griffin</td>
-            <td>11/09/2001</td>
-            <td>330</td>
-            <td>69</td>
-            <td>Low credit from 5 classes, 4th year (+2), bachelor</td>
-        </tr>
-    </table>
+<head>
+    <title>Login</title>
+    <script src="./script.js"></script>
+    <style>
+        body{
+            background-image: linear-gradient(to bottom left, rgb(4, 28, 247) , rgb(255, 255, 255));
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .slice{
+            border: 5px solid rgb(255, 255, 255);
+            border-style: solid;
+            max-width: 40%;
+            border-width: thick;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+        img{
+            max-width: 60%;
+            max-height: 60%;
+        }
+        .login_text1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .login_text2{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 5px;
+        }
+        .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .button {
+        cursor: pointer;
+        background-color: rgb(4, 28, 247);
+        color: white;
+        background-color: rgb(4, 28, 247);
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 10px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body><div class="slice">
+    <div class="logo"><img src="/home/ismylsmylv/projects/CodesShared/ismylsmylv/homework/random.png" alt="logo"></div>
+    <div class="login_text1"><p>Welcome to the Ceres</p></div>
+    <div class="login_text2"><p>Please enter your username and password to continue:</p></div>
+<form onsubmit="login()">
+    <div class="name_input"><input type="text" placeholder="username" id="username" name="username" style="background-color: #ffffff; border: 1px solid #c8c8c8; padding: 10px; align-items: center; margin-top: 15px;"></div>
+    <div class="pass_input"><input type="password" placeholder="password" id="password" name="password" style="background-color: #ffffff; border: 1px solid #c8c8c8; padding: 10px; align-items: center; margin-top: 15px;"></div>
+    <div class="submit"><button class="button" id="submit-btn">Log in</button></div>
+</form>
+</div>
 </body>
 </html>
